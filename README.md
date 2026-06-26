@@ -1,6 +1,7 @@
 # vueZiptoAddress
 
 郵便番号(数字7桁、ハイフン無し）から住所を検索.
+
 日本の都道府県の天気概要を表示.
 
 This template should help get you started developing with Vue 3 in Vite.
