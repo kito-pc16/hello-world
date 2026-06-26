@@ -74,6 +74,7 @@ const weatherData = ref<WeatherData | null>(null)
 const yohoukucode = ref('')
 const reportDatetime = ref('')
 
+// Fetch weather data from the JMA API
 async function fetchWeatherData(yohoukucode: string) {
   await axios.get<WeatherData>('https://www.jma.go.jp/bosai/forecast/data/overview_forecast/'+yohoukucode+'.json')
     .then(response => {
