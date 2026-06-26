@@ -8,12 +8,18 @@
   <main>
     <RouterView />
   </main>
-  <footer>
-  <p>
+  <footer class="bg-emerald-200 h-10">
+  <p class="justify-self-center">
     Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
     documentation
   </p>
   </footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+</style>
