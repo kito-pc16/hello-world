@@ -1,5 +1,6 @@
 # vueZiptoAddress
 
+郵便番号(数字7桁、ハイフン無し）から住所を検索.
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
