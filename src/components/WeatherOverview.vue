@@ -104,7 +104,7 @@ async function fetchWeatherData(yohoukucode: string) {
         </div>
       </button>
     </div>
-    <div class="flex gap-4 text-xl">
+    <div v-if="reportDatetime" class="flex gap-4 text-xl">
       <p>{{ reportDatetime }}</p>
       <p>{{ weatherData?.publishingOffice }} 発表</p>
     </div>

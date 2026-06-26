@@ -53,7 +53,14 @@ function clearData() {
     <div class="flex items-center gap-3 my-3">
         <p>郵便番号(ハイフンなし、数字7桁):</p>
         <input id="zipcode" class="border border-gray-300 rounded-md p-2" type="text" v-model="zipcode"/>
-        <button class="bg-sky-400 hover:bg-sky-600 rounded-md p-2 text-white" type="button" @click="getAddress(zipcode)">検索</button>
+        <button class="bg-sky-400 hover:bg-sky-600 rounded-md p-2 text-white" type="button" @click="getAddress(zipcode)">
+            <div class="flex items-center">
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+                検索
+            </div>
+        </button>
         <button class="bg-gray-100 hover:bg-gray-300 rounded-md p-2" type="button" @click="clearData()">クリア</button>
     </div>
     <p v-if="result != undefined && result.status == 400">{{ result!.message }}</p>
